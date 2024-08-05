@@ -14,17 +14,13 @@
   }
 
   &-info {
-    display: grid;
-    column-gap: $sp-12;
-    grid-template:
-      "author-name author-name"
-      "author-followers author-time"
-      / 1fr auto;
-    row-gap: -$sp-2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 
     .author-name {
       color: var(--semantic-label-normal);
-      grid-area: author-name;
 
       @include label-01-reading-sb;
     }
@@ -32,7 +28,6 @@
     .author-followers {
       color: var(--semantic-label-normal);
       font-feature-settings: "ss10" on;
-      grid-area: author-followers;
 
       @include label-01-normal-r;
     }
@@ -40,7 +35,6 @@
     .author-time {
       color: var(--semantic-label-alternative);
       font-feature-settings: "ss10" on;
-      grid-area: author-time;
 
       @include label-01-normal-r;
     }
