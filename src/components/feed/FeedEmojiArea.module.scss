@@ -11,8 +11,8 @@
     align-items: center;
     justify-content: center;
 
-    &:not(:first-child) {
-      margin-left: $sp-12;
+    &:not(:last-child) {
+      margin-right: $sp-12;
     }
 
     &.no-exist-event {

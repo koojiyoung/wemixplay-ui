@@ -75,18 +75,18 @@
   .feed-footer {
     display: flex;
     flex-direction: column;
-    padding: $sp-8 $sp-20 0 $sp-20;
+    padding: $sp-4 $sp-20 0 $sp-20;
     margin-top: $sp-16;
 
     button {
       display: flex;
       align-items: center;
+      margin-top: $sp-4;
       color: var(--semantic-label-normal);
       font-feature-settings: "ss10" on;
+      text-align: center;
 
       @include label-01-normal-m;
-
-      text-align: center;
 
       .count {
         padding-left: $sp-4;
